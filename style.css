@@ -1,0 +1,173 @@
+#wrapper {
+  background-image: linear-gradient(#FFFFFF,#78ffd6);
+  padding: 2em;
+  border-radius: 1em;
+}
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color:#3f6959;
+  text-align:center;
+}
+
+p {font-family: 'Merriweather Sans', sans-serif;
+color:#3f6959;
+text-align: center;
+}
+
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #3f6959;
+  text-align:center;
+}
+
+#photogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+@media all and (min-width: 20em){
+	#photogrid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+  #logo {
+    display:block;
+    margin:auto;
+    width: 50%;
+    padding: 1em;
+  }
+}
+#photos {
+  text-align:center;
+  font-size: .5em;
+}
+
+#photos:hover {
+  animation: pani 1.0s;
+  transform-origin: center;
+  }
+
+@keyframes pani{
+  0%   { transform: scale(1.0);}
+  100% { transform: scale(1.1);}
+}
+
+footer {
+  font-family: 'Merriweather Sans', sans-serif;
+  color:#3f6959;
+  text-align:center;
+  padding:1em;
+}
+
+/* Contact Form */
+
+
+
+nav{
+margin:auto;
+ text-align:center;
+ padding:1em;
+}
+
+nav li{
+display:inline-block;
+list-style-type: none;
+}
+
+nav a{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration:none;
+  color: white;
+  background-color: #569171;
+  border-radius: 2px;
+  padding: .5em;
+  text-align:center;
+}
+
+a:hover{
+    background-color: #3d6650;
+}
+label {
+  color: #FFFFFF;
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: .5em;
+}
+input[type=text], select, textarea {
+ width: 100%;
+ padding: .5em;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-top: .1em;
+ margin-bottom: .1em;
+ resize: vertical
+}
+
+input[type=submit] {
+ background-color: #78ffd6;
+ color: #326656;
+ font-family: 'Merriweather Sans', sans-serif;
+ padding: 1em;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: #5cccaa;
+}
+
+.container {
+  width: 50%;
+ border-radius: 5px;
+ background-color: #5f8a76;
+ padding: 1em;
+ margin:auto;
+}
+
+@media all and (min-width: 30em){
+   #photogrid {
+     display: grid;
+     grid-template-columns: 1fr 1fr ;
+     grid-column-gap: 1em;
+     grid-row-gap: 1em;
+   }
+   #logo {
+     display:block;
+     margin:auto;
+     width: 50%;
+     padding: 1em;
+   }
+   #description {
+     width:70%;
+     margin:auto;
+     padding:1em;
+   }
+
+
+}
+@media all and (min-width: 50em){
+	 #wrapper { max-width: 1000px; margin: 0em auto; }
+   #photogrid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-column-gap: 1em;
+     grid-row-gap: 1em;
+   }
+   #logo {
+     display:block;
+     margin:auto;
+     width: 40%;
+     padding: 2em;
+   }
+   #description {
+     width:50%;
+     margin:auto;
+     padding:1em;
+   }
+
+
+}
